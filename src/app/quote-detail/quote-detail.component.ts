@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteDetailComponent implements OnInit {
 
+  @Input() Quotes: Quotes;
+  @Output() isComplete = new EventEmitter<boolean>();
+
+  quoteDelete(complete: boolean) {
+    this.isComplete.emit(complete);
+  }
+
   constructor() { }
 
   ngOnInit() {
