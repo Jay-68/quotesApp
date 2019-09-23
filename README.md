@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
 
+The quotes app displays quotes input by users and allows users to vote for their favourite quotes. 
+
+Users can also dislike votes and add their own custom quotes.
+
+The live link to the Quotes app can be found at [quotesApp](https://jay-68.github.io/quotesApp/).
+
+Below is an image preview of the live page
+
+ ![quotesApp](src/assets/quotesApp.png)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
