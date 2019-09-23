@@ -1,1 +1,7 @@
-<p>quote-detail works!</p>
+<div class="container">
+  <div class="details">
+    <p>This Quote was uploaded by {{Quotes.uploader}}
+      {{Quotes.completeDate|dateCount }} hours ago</p>
+    <button class="btn-danger" (click)='quoteDelete(true)'>Delete</button><br>
+  </div>
+</div>
