@@ -1,12 +1,13 @@
 .card {
-  background-color: rgb(12, 212, 238);
+  background-image: url(https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-size: cover;
   top: 20px;
   color: grey;
 }
 
 .centered {
   text-align: center;
-  color: rgb(97, 139, 18);
+  color: whitesmoke;
 }
 
 h1 {

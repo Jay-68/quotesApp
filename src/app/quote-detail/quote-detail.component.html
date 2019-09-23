@@ -1,7 +1,7 @@
 <div class="container">
   <div class="details">
     <p>This Quote was uploaded by {{quote.uploader}}
-      {{quote.completeDate }} days ago</p>
+      {{quote.completeDate | date }}</p>
     <button class="btn-danger" (click)='quoteDelete(true)'>Delete</button><br>
   </div>
 </div>
