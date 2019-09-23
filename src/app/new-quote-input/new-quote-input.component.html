@@ -8,11 +8,6 @@
             #uploader="ngModel">
         </div>
         <div>
-          <label for="uploader">Author:</label>
-          <input type="text" id='uploader' [(ngModel)]="newQuote.uploader" required class="form-control" name="uploader"
-            #uploader="ngModel">
-        </div>
-        <div>
           <label for="name">Quote</label>
           <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel"
             required>
@@ -27,7 +22,7 @@
             #completeDate="ngModel" required>
         </div>
         <div>
-          <button type="Submit" class="btn-info">Upload</button>
+          <button type="Submit" class="btn-info btn-sm mt-2">Upload</button>
         </div>
       </div>
     </form>
