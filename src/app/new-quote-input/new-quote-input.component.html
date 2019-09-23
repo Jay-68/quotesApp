@@ -3,7 +3,12 @@
     <form (ngSubmit)='submitQuote()' #goalForm='ngForm'>
       <div class="centered">
         <div>
-          <label for="uploader">Uploader</label>
+          <label for="uploader">Uploaded by:</label>
+          <input type="text" id='uploader' [(ngModel)]="newQuote.uploader" required class="form-control" name="uploader"
+            #uploader="ngModel">
+        </div>
+        <div>
+          <label for="uploader">Author:</label>
           <input type="text" id='uploader' [(ngModel)]="newQuote.uploader" required class="form-control" name="uploader"
             #uploader="ngModel">
         </div>

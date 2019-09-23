@@ -3,10 +3,14 @@
     <div class=" centered">
       <h1>Welcome to quotes World!</h1>
     </div>
+    <div class="col-md-12">
+      <h2 class="centered">Add your quote:</h2>
+      <app-new-quote-input (addQuote)="addNewQuote($event)"></app-new-quote-input>
+    </div>
     <div class="row">
-      <div class="col-md-7">
+      <div class="col-md-12">
         <div class="card-body">
-          <p class="centered">Best Inspiring Quote</p>
+          <h4 class="centered pb-3">Best Quotes Uploaded by Users:</h4>
           <ol>
             <div>
               <li *ngFor='let quote of quotes; let i = index' class="pad-5">
@@ -23,10 +27,6 @@
           </ol><br>
           <br>
         </div>
-      </div>
-      <div class="col-md-5">
-        <h2 class="centered">Add your quote:</h2>
-        <app-new-quote-input (addQuote)="addNewQuote($event)"></app-new-quote-input>
       </div>
     </div>
   </div>
