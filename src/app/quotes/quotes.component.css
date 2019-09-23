@@ -1,0 +1,14 @@
+.card {
+  background-color: antiquewhite;
+  top: 20px;
+  color: black;
+}
+
+.centered {
+  text-align: center;
+  color: maroon;
+}
+
+h1 {
+  text-align: center;
+}
