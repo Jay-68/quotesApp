@@ -18,7 +18,7 @@ Below is an image preview of the live page
 
 ![quotesApp](src/assets/quotesApp.png)
 
- ## Behaviour Driven Development(BDD)
+ ## Behaviour Driven Development(BDD) 
 
 | Input                                        | Output                                     |
 |----------------------------------------------|--------------------------------------------|
