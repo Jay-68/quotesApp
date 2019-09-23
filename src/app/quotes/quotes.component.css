@@ -1,12 +1,12 @@
 .card {
-  background-color: antiquewhite;
+  background-color: rgb(12, 212, 238);
   top: 20px;
-  color: black;
+  color: grey;
 }
 
 .centered {
   text-align: center;
-  color: maroon;
+  color: rgb(97, 139, 18);
 }
 
 h1 {

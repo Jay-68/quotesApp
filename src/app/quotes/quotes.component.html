@@ -1,23 +1,23 @@
 <div class="container">
   <div class="card">
     <div class=" centered">
-      <h1>Quotes for daily motivation</h1>
+      <h1>Welcome to quotes World!</h1>
     </div>
     <div class="row">
       <div class="col-md-7">
         <div class="card-body">
-          <p class="centered">Get inspired for life</p>
+          <p class="centered">Best Inspiring Quote</p>
           <ol>
             <div>
               <li *ngFor='let quote of quotes; let i = index' class="pad-5">
                 {{quote.name}}
-                <button class=" btn btn-primary textSize" (click)='togleDetails(i)'> show More</button><br>
-                <button class="btn-success textSize" (click)='quote.upvote = quote.upvote + 1'> Like it!!
+                <button class=" btn btn-primary textSize" (click)='toggleDetails(i)'>Details</button><br>
+                <button class="btn-success textSize" (click)='quote.upvote = quote.upvote + 1'> Like
                   {{ quote.upvote }}</button>
-                <button class="btn-info textSize" (click)='quote.downvote = quote.downvote + 1'>Naah!!
+                <button class="btn-info textSize" (click)='quote.downvote = quote.downvote + 1'>Dislike
                   {{ quote.downvote }} </button>
-                <app-quote-details *ngIf='quote.showUploader' [Quotes]='quote' (isComplete)='deleteQuote($event,i)'>
-                </app-quote-details>
+                <app-quote-detail *ngIf='quote.showUploader' [quote]='quote' (isComplete)='deleteQuote($event,i)'>
+                </app-quote-detail>
               </li><br> <br>
             </div>
           </ol><br>
@@ -25,8 +25,8 @@
         </div>
       </div>
       <div class="col-md-5">
-        <h2 class="centered">Add your favourite quote</h2>
-        <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
+        <h2 class="centered">Add your quote:</h2>
+        <app-new-quote-input (addQuote)="addNewQuote($event)"></app-new-quote-input>
       </div>
     </div>
   </div>

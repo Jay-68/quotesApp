@@ -18,7 +18,7 @@ export class QuotesComponent implements OnInit {
 
 
 
-  togleDetails(index) {
+  toggleDetails(index) {
     this.quotes[index].showUploader = !this.quotes[index].showUploader;
   }
 
